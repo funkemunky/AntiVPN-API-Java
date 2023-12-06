@@ -4,44 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc0480ff-9b26-467f-b8a7-6103ce539cd9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/brighten/isitbad/IsItBadAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/brighten/isitbad/structures/FailedResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/brighten/isitbad/structures/IpInformation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/brighten/isitbad/utils/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/brighten/isitbad/utils/json/CDL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/brighten/isitbad/utils/json/Cookie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/brighten/isitbad/utils/json/CookieList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/brighten/isitbad/utils/json/HTTP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/brighten/isitbad/utils/json/HTTPTokener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/brighten/isitbad/utils/json/JSONArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/brighten/isitbad/utils/json/JSONException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/brighten/isitbad/utils/json/JSONML.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/brighten/isitbad/utils/json/JSONObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/brighten/isitbad/utils/json/JSONString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/brighten/isitbad/utils/json/JSONStringer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/brighten/isitbad/utils/json/JSONTokener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/brighten/isitbad/utils/json/JSONWriter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/brighten/isitbad/utils/json/JsonReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/brighten/isitbad/utils/json/XML.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/brighten/isitbad/utils/json/XMLTokener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/APITest.java" afterDir="false" />
+    <list default="true" id="cc0480ff-9b26-467f-b8a7-6103ce539cd9" name="Changes" comment="API implementation is working">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/brighten/isitbad/utils/UrlUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/brighten/isitbad/IsItBadAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/brighten/isitbad/IsItBadAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/brighten/isitbad/utils/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/brighten/isitbad/utils/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/brighten/isitbad/utils/json/CDL.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/brighten/isitbad/utils/json/Cookie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/brighten/isitbad/utils/json/CookieList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/brighten/isitbad/utils/json/HTTP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/brighten/isitbad/utils/json/HTTPTokener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/brighten/isitbad/utils/json/JSONArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/brighten/isitbad/utils/json/JSONException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/brighten/isitbad/utils/json/JSONML.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/brighten/isitbad/utils/json/JSONObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/brighten/isitbad/utils/json/JSONString.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/brighten/isitbad/utils/json/JSONStringer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/brighten/isitbad/utils/json/JSONTokener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/brighten/isitbad/utils/json/JSONWriter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/brighten/isitbad/utils/json/JsonReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/brighten/isitbad/utils/json/XML.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/brighten/isitbad/utils/json/XMLTokener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/APITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/APITest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -71,7 +65,27 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;funkemunky&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="b3250e74-a7e3-49c6-8bc4-054bda4a47bc" />
+        <option name="url" value="https://github.com/funkemunky/AntiVPN-API-Java.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="374d92bc" />
@@ -90,16 +104,17 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/dawson/IdeaProjects/IsItBadAPI-Java/src/main/java/dev/brighten/isitbad/utils",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/dawson/Dev/Java/IsItBadAPI-Java",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -110,17 +125,42 @@
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
-      <command value="gradle build" />
       <command value="gradle test" />
+      <command value="gradle build jar" />
+      <command value="gradle build" />
+      <command value="gradle test --info" />
     </option>
   </component>
   <component name="RunManager" selected="Gradle.IsItBadAPI-Java [test]">
-    <configuration name="IsItBadAPI-Java [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="IsItBadAPI-Java [build jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="IsItBadAPI-Java [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--scan" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -185,6 +225,7 @@
       <list>
         <item itemvalue="Gradle.IsItBadAPI-Java [test]" />
         <item itemvalue="Gradle.IsItBadAPI-Java [build]" />
+        <item itemvalue="Gradle.IsItBadAPI-Java [build jar]" />
         <item itemvalue="Gradle.IsItBadAPI-Java [testClasses]" />
       </list>
     </recent_temporary>
@@ -202,6 +243,10 @@
       <updated>1701809389594</updated>
       <workItem from="1701809390601" duration="1292000" />
       <workItem from="1701871735467" duration="1120000" />
+      <workItem from="1701873757726" duration="1174000" />
+      <workItem from="1701874943827" duration="339000" />
+      <workItem from="1701875285109" duration="8000" />
+      <workItem from="1701875298658" duration="1496000" />
     </task>
     <servers />
   </component>
@@ -218,5 +263,13 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="API implementation is working" />
+    <option name="LAST_COMMIT_MESSAGE" value="API implementation is working" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

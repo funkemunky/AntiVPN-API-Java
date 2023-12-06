@@ -3,25 +3,29 @@ package dev.brighten.isitbad;
 import dev.brighten.isitbad.structures.FailedResponse;
 import dev.brighten.isitbad.structures.IpInformation;
 import dev.brighten.isitbad.utils.Result;
-import dev.brighten.isitbad.utils.json.JSONException;
-import dev.brighten.isitbad.utils.json.JSONObject;
-import dev.brighten.isitbad.utils.json.JsonReader;
+import dev.brighten.isitbad.utils.UrlUtils;
+import org.json.JSONObject;
 
 import java.io.IOException;
+import java.net.InetAddress;
 import java.net.MalformedURLException;
-import java.net.URL;
 
 public class IsItBadAPI {
 
     private static final String API_ENDPOINT = "https://funkemunky.cc/vpn?ip=%s";
+
+    public static Result<IpInformation, FailedResponse> getIpInformation(InetAddress address) {
+        return getIpInformation(address.getHostAddress());
+    }
+
     public static Result<IpInformation, FailedResponse> getIpInformation(String ip) {
         try {
-            URL url = new URL(String.format(API_ENDPOINT, ip));
+            String rawJson = UrlUtils.readResponseFromURL(String.format(API_ENDPOINT, ip));
 
-            JSONObject result = JsonReader.readJsonFromUrl(String.format(API_ENDPOINT, ip));
+            JSONObject result = new JSONObject(rawJson);
 
             if(!result.getBoolean("success")) {
-                return new Result.Err<>(new FailedResponse(false, result.getString("reason")));
+                return new Result.Err<>(new FailedResponse(false, result.getString("failureReason")));
             }
 
             return new Result.Ok<>(new IpInformation(
@@ -45,11 +49,9 @@ public class IsItBadAPI {
                     result.getString("asn")
             ));
         } catch (MalformedURLException e) {
-            return new Result.Err<>(new FailedResponse(false, "Invalid IP address."));
+            return new Result.Err<>(new FailedResponse(false, "Invalid IP address: " + e.getMessage()));
         } catch (IOException e) {
-            return new Result.Err<>(new FailedResponse(false, "Failed to connect to API."));
-        } catch (JSONException e) {
-            return new Result.Err<>(new FailedResponse(false, "Failed to parse JSON response."));
+            return new Result.Err<>(new FailedResponse(false, "Failed to connect to API: " + e.getMessage()));
         }
     }
 }

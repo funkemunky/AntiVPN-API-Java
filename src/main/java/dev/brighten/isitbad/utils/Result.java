@@ -13,6 +13,11 @@ public abstract class Result<T, E> {
         public T getValue() {
             return value;
         }
+
+        @Override
+        public T unwrap() throws RuntimeException {
+            return getValue();
+        }
     }
 
     public static final class Err<T, E> extends Result<T, E> {
@@ -25,5 +30,12 @@ public abstract class Result<T, E> {
         public E getError() {
             return error;
         }
+
+        @Override
+        public T unwrap() throws RuntimeException {
+            throw new RuntimeException("Attempted to unwrap an error result: " + getError().toString());
+        }
     }
+
+    public abstract T unwrap() throws RuntimeException;
 }
