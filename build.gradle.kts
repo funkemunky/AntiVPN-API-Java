@@ -2,8 +2,8 @@ plugins {
     id("java")
 }
 
-group = "org.example"
-version = "1.0-SNAPSHOT"
+group = "dev.brighten.antivpn"
+version = "1.0"
 
 repositories {
     mavenCentral()
@@ -20,6 +20,10 @@ dependencies {
 
     testImplementation(platform("org.junit:junit-bom:5.9.1"))
     testImplementation("org.junit.jupiter:junit-jupiter")
+}
+
+tasks.jar {
+    from(configurations.runtimeClasspath.get().map { if (it.isDirectory) it else zipTree(it) })
 }
 
 tasks.test {
